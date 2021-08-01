@@ -78,6 +78,24 @@ align-items: center;
         copyStyles:true
     
     })
+
+    const termer = (term) => {
+
+        switch (term) {
+            case 1:
+                return "First Term" 
+           case 2:
+                return "Second Term" 
+          case 3:
+                return "Third Term" 
+      
+           
+        
+            default:
+                return "None"
+            
+        }
+      }
    
     return (
        <StyledReciept ref={componentRef}>
@@ -95,7 +113,7 @@ align-items: center;
             <img src={Logo} alt='logo'></img>
             <div className='mainAddress'>
             <Typography variant="h6" gutterBottom>
-            NOBLE INTELLECT ACADEMY
+            NUTS-SMS DEMO ACADEMY
           </Typography>
           <Typography variant="caption" display="block" gutterBottom>
           No. 25 zone 3 Kofare, Jimeta Yola North Adamawa State 

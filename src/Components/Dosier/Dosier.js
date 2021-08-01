@@ -78,7 +78,7 @@ export default function Dosier() {
             <div key={ind} id="container">
             <center> <div className="header">
                  <img src={Logo} style={{textAlign:'center'}}/><br></br>
-                 <span className="school-name">NOBLE INTELLECT ACADEMY</span><br></br>
+                 <span className="school-name">NUTS-SMS DEMO ACADEMY</span><br></br>
                 <span>No. 24 kofare zone 3,, Jimeta Yola North, Adamawa State</span><br></br>
                 <span>Motto: Learning For Better Future.</span>
                 <h4>STUDENT REPORT SHEET</h4>

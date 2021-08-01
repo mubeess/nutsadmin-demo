@@ -15,7 +15,7 @@ import { makeStyles,  fade,
   withStyles,
   createMuiTheme, } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { green, orange,grey,yellow } from '@material-ui/core/colors';
+import { green, orange,grey,yellow,blue } from '@material-ui/core/colors';
 const StyledLogin=styled.div`
 height: 100vh;
 width: 100%;
@@ -77,11 +77,7 @@ align-items: center;
 `;
 const useStyles = makeStyles((theme)=>(
   {
-    butt: {
-      boxShadow: '0 0px 0px 2px #FFC305',
-      border: '0.2px solid #FFC305',
-      color:'#FFC305'
-    },
+   
     root:{
       '&:hover': {
         boxShadow: '0 3px 5px 2px white',
@@ -95,7 +91,7 @@ const useStyles = makeStyles((theme)=>(
 ))
 const theme = createMuiTheme({
   palette: {
-    primary: orange,
+    primary: blue,
   
   },
 });
@@ -197,6 +193,7 @@ export default function Login(props) {
        
 
       appProps.setIslogged()
+      localStorage.setItem('user', JSON.stringify({role:data.user.role,user:data.user}))
       appProps.setUser({role:data.user.role,user:data.user})
       const isAdmin=data.user.role.includes('Admin')
       const urlToPush=isAdmin?'dash/main':'dash/profile'
@@ -251,7 +248,7 @@ export default function Login(props) {
       });
     })
   })
-}}  className={classes.butt}  style={{marginLeft:'auto',marginTop:'30px',marginRight:'40px'}} variant='outlined' color="secondary">
+}} style={{marginLeft:'auto',marginTop:'30px',marginRight:'40px'}} variant='outlined' color="primary">
         Login
       </Button>
                  </div>
