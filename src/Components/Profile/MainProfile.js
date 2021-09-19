@@ -55,7 +55,7 @@ export default function MainProfile() {
  
     const myImage = JSON.parse(localStorage.getItem('user')).user.image.split('/')
     const myRealImage=myImage.splice(1,2).join('/')
-    let appImage=`https://polar-brook-59807.herokuapp.com/${myRealImage}`;
+    let appImage=`https://dry-hamlet-70721.herokuapp.com/${myRealImage}`;
     setImageUrl(appImage)
     console.log(myImage)
 
@@ -66,7 +66,7 @@ export default function MainProfile() {
     
     return (
              <div ref={componentRef} id="container-fluid">
-        {/* <img className="profile-pic" src='https://polar-brook-59807.herokuapp.com/public/images/musty-avatar.jpg' /> */}
+        {/* <img className="profile-pic" src='https://dry-hamlet-70721.herokuapp.com/public/images/musty-avatar.jpg' /> */}
        <div className='profile-pic'>
        <Avatar style={{width:'100%',height:'100%'}} alt={JSON.parse(localStorage.getItem('user')).user.firstName} src={imageUrl} />   
         </div>     
@@ -79,7 +79,7 @@ export default function MainProfile() {
   if (!isJpgOrPng) {
     message.error('You can only upload JPG/PNG file!');}
             }}
-    action={`https://polar-brook-59807.herokuapp.com/admin/set-profile-pic/?id=${JSON.parse(localStorage.getItem('user')).user._id}`}
+    action={`https://dry-hamlet-70721.herokuapp.com/admin/set-profile-pic/?id=${JSON.parse(localStorage.getItem('user')).user._id}`}
     name='profile_pic'
     method='PUT'
    
@@ -93,7 +93,7 @@ export default function MainProfile() {
         message.success(`${info.file.name} file uploaded successfully`);
         const myImage = info.file.response.message.split('/')
         const myRealImage=myImage.splice(1,2).join('/')
-       const  newAppImage=`https://polar-brook-59807.herokuapp.com/${myRealImage}`;
+       const  newAppImage=`https://dry-hamlet-70721.herokuapp.com/${myRealImage}`;
         setImageUrl(newAppImage)
         console.log(newAppImage)
         // setId(idd)
@@ -184,7 +184,7 @@ export default function MainProfile() {
                  setTimeout(() => {
                     
                  }, 3000);
-                fetch(`https://polar-brook-59807.herokuapp.com/${urlToPush}/change-password/${JSON.parse(localStorage.getItem('user')).user._id}`,{
+                fetch(`https://dry-hamlet-70721.herokuapp.com/${urlToPush}/change-password/${JSON.parse(localStorage.getItem('user')).user._id}`,{
                     method:'POST',
                     headers:{
                       "Content-Type":'application/json'

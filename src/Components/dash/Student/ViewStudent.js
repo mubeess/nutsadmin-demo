@@ -122,7 +122,7 @@ const filtered=allStudents.filter(dat=>dat.firstName.toLowerCase().includes(sear
 
 
 useEffect(()=>{
-  fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student`)
+  fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student`)
   .then(res=>{
     res.json()
     .then(data=>{
@@ -203,7 +203,7 @@ useEffect(()=>{
                  }} style={{color:'green',marginRight:'10px',cursor:'pointer'}}></EditRounded>
                  <DeleteForeverRounded onClick={()=>{
                    const userId=row._id;
-                   fetch(`https://polar-brook-59807.herokuapp.com/admin/remove-student/?id=${userId}`,{
+                   fetch(`https://dry-hamlet-70721.herokuapp.com/admin/remove-student/?id=${userId}`,{
                     method:'DELETE',
                     headers:{
                       "Content-Type":'application/json'
@@ -212,7 +212,7 @@ useEffect(()=>{
                    .then(res=>{
                      res.json()
                      .then(data=>{
-                       fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student`)
+                       fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student`)
                       .then(res=>{
                         res.json()
                         .then(data=>{
@@ -233,7 +233,7 @@ useEffect(()=>{
                     <Button onClick={()=>{
                       const confirmed=window.confirm(`Are You Sure You Want To Un-Suspend ${' '+row.username}`)
                      if(confirmed==true) {
-                      fetch(`https://polar-brook-59807.herokuapp.com/admin/suspend-a-student/?username=${row.username}&suspend=false`,{
+                      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/suspend-a-student/?username=${row.username}&suspend=false`,{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -242,7 +242,7 @@ useEffect(()=>{
                        .then(res=>{
                          res.json()
                          .then(data=>{
-                           fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student`)
+                           fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student`)
                           .then(res=>{
                             res.json()
                             .then(data=>{
@@ -265,7 +265,7 @@ useEffect(()=>{
                     <Button onClick={()=>{
                       const confirmed=window.confirm(`Are You Sure You Want To Suspend ${' '+row.username}`)
                      if(confirmed==true) {
-                      fetch(`https://polar-brook-59807.herokuapp.com/admin/suspend-a-student/?username=${row.username}&suspend=true`,{
+                      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/suspend-a-student/?username=${row.username}&suspend=true`,{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -274,7 +274,7 @@ useEffect(()=>{
                        .then(res=>{
                          res.json()
                          .then(data=>{
-                           fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student`)
+                           fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student`)
                           .then(res=>{
                             res.json()
                             .then(data=>{

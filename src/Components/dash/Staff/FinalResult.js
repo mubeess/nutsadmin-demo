@@ -220,7 +220,7 @@ const useStyles = makeStyles({
                 submitButton:buttonToPush,
                 value:false
               }
-                  fetch(`https://polar-brook-59807.herokuapp.com/admin/final-submission`,{
+                  fetch(`https://dry-hamlet-70721.herokuapp.com/admin/final-submission`,{
                     method:'PUT',
                     headers:{
                       "Content-Type":'application/json'
@@ -231,7 +231,7 @@ const useStyles = makeStyles({
                     res.json()
                     .then(data=>{
                       console.log("+++++++",myObj)
-                      fetch(`https://polar-brook-59807.herokuapp.com/admin/get-single-staff/?username=${appProps.user.user.username}`)
+                      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-single-staff/?username=${appProps.user.user.username}`)
                       .then(res=>{
                         res.json()
                         .then(dat=>{
@@ -271,7 +271,7 @@ const useStyles = makeStyles({
                     submitButton:buttonToPush,
                     value:false
                   }
-                      fetch(`https://polar-brook-59807.herokuapp.com/admin/final-submission`,{
+                      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/final-submission`,{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -282,7 +282,7 @@ const useStyles = makeStyles({
                         res.json()
                         .then(data=>{
                           console.log("+++++++",myObj)
-                          fetch(`https://polar-brook-59807.herokuapp.com/admin/get-single-staff/?username=${appProps.user.user.username}`)
+                          fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-single-staff/?username=${appProps.user.user.username}`)
                           .then(res=>{
                             res.json()
                             .then(dat=>{

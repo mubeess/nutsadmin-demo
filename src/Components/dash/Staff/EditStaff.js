@@ -89,7 +89,7 @@ export default function EditStaff() {
      
    
       console.log(appProps)
-      // fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+      // fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
       // .then(res=>{
       //   res.json()
       //   .then(data=>{
@@ -342,7 +342,7 @@ const changeSelect=(e)=>{
 
     }
     console.log(stafff)
-  fetch(`https://polar-brook-59807.herokuapp.com/admin/edit-staff/?id=${appProps.editValue.user._id}`,{
+  fetch(`https://dry-hamlet-70721.herokuapp.com/admin/edit-staff/?id=${appProps.editValue.user._id}`,{
     method:'PUT',
     headers:{
       "Content-Type":'application/json'

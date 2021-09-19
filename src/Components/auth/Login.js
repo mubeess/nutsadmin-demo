@@ -177,7 +177,7 @@ export default function Login(props) {
     username,
     password
   }
-  fetch('https://polar-brook-59807.herokuapp.com/admin/login',{
+  fetch('https://dry-hamlet-70721.herokuapp.com/admin/login',{
     method:'POST',
     headers:{
       "Content-Type":'application/json'

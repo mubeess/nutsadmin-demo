@@ -67,7 +67,7 @@ function RandomIcons(ind) {
 export default function MainApp() {
     const [details,setDetails]=useState([])
     useEffect(()=>{
-     fetch('https://polar-brook-59807.herokuapp.com/admin/dashboard')
+     fetch('https://dry-hamlet-70721.herokuapp.com/admin/dashboard')
      .then(res=>{
          res.json()
          .then(data=>{

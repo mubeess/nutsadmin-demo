@@ -66,7 +66,7 @@ export default function RegisterdSubject(){
   const [allSubjects,setAllSubjects]=useState([])
 
   useEffect(()=>{
-    fetch('https://polar-brook-59807.herokuapp.com/admin/get-all-subject')
+    fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-all-subject')
     .then(res=>{
       res.json()
       .then(data=>{
@@ -125,7 +125,7 @@ export default function RegisterdSubject(){
                    const myObj={
                      id:row._id
                    }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/delete-single-subject`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/delete-single-subject`,{
                       method:'DELETE',
                       headers:{
                         "Content-Type":'application/json'
@@ -136,7 +136,7 @@ export default function RegisterdSubject(){
                        res.json()
                        .then(data=>{
                          console.log(data)
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/get-all-subject')
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-all-subject')
                         .then(res=>{
                           res.json()
                           .then(data=>{

@@ -85,7 +85,7 @@ export default function StyledTable(props) {
                           subject:props.row.subject
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/teacher/insert-one-result',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/teacher/insert-one-result',{
                         method:'POST',
                         headers:{
                           "Content-Type":'application/json'
@@ -137,7 +137,7 @@ export default function StyledTable(props) {
                   subject:props.row.subject
 
                 }
-                fetch('https://polar-brook-59807.herokuapp.com/teacher/insert-one-result',{
+                fetch('https://dry-hamlet-70721.herokuapp.com/teacher/insert-one-result',{
                 method:'POST',
                 headers:{
                   "Content-Type":'application/json'
@@ -188,7 +188,7 @@ export default function StyledTable(props) {
                   subject:props.row.subject
 
                 }
-                fetch('https://polar-brook-59807.herokuapp.com/teacher/insert-one-result',{
+                fetch('https://dry-hamlet-70721.herokuapp.com/teacher/insert-one-result',{
                 method:'POST',
                 headers:{
                   "Content-Type":'application/json'
@@ -237,7 +237,7 @@ export default function StyledTable(props) {
                   subject:props.row.subject
 
                 }
-                fetch('https://polar-brook-59807.herokuapp.com/teacher/insert-one-result',{
+                fetch('https://dry-hamlet-70721.herokuapp.com/teacher/insert-one-result',{
                 method:'POST',
                 headers:{
                   "Content-Type":'application/json'
@@ -287,7 +287,7 @@ export default function StyledTable(props) {
  
                  }
                  console.log(myObj)
-                 fetch('https://polar-brook-59807.herokuapp.com/teacher/insert-one-result',{
+                 fetch('https://dry-hamlet-70721.herokuapp.com/teacher/insert-one-result',{
                  method:'POST',
                  headers:{
                    "Content-Type":'application/json'

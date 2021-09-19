@@ -134,7 +134,7 @@ export default function Roles() {
   const [isEmpty,setIsEmpty]=useState(false)
   const [classTeacherClass,setClassTeacherClass]=useState([])
   useEffect(()=>{
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
     .then(res=>{
       res.json()
       .then(data=>{
@@ -144,12 +144,12 @@ export default function Roles() {
         setAllStaff(data.message)
       }).then(dat=>{
 
-        fetch('https://polar-brook-59807.herokuapp.com/admin/get-all-subject')
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-all-subject')
         .then(res=>{
           res.json()
           .then(data=>{
             setAllSubjects(data.message)
-            fetch('https://polar-brook-59807.herokuapp.com/admin/get-every-class')
+            fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-every-class')
             .then(res=>{
               res.json()
               .then(data=>{
@@ -360,7 +360,7 @@ export default function Roles() {
 }
 console.log(myObj)
 handleToggle()
-fetch(`https://polar-brook-59807.herokuapp.com/admin/set-role/?id=${staff}`,{
+fetch(`https://dry-hamlet-70721.herokuapp.com/admin/set-role/?id=${staff}`,{
   method:'PUT',
   headers:{
     "Content-Type":'application/json'
@@ -377,7 +377,7 @@ fetch(`https://polar-brook-59807.herokuapp.com/admin/set-role/?id=${staff}`,{
       },
       type:'success'
     });
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
     .then(res=>{
       res.json()
       .then(data=>{
@@ -452,7 +452,7 @@ fetch(`https://polar-brook-59807.herokuapp.com/admin/set-role/?id=${staff}`,{
             const myObjj={
               role:'None'
             }
-            fetch(`https://polar-brook-59807.herokuapp.com/admin/set-role/?id=${staf._id}`,{
+            fetch(`https://dry-hamlet-70721.herokuapp.com/admin/set-role/?id=${staf._id}`,{
               method:'PUT',
               headers:{
                 "Content-Type":'application/json'
@@ -472,7 +472,7 @@ fetch(`https://polar-brook-59807.herokuapp.com/admin/set-role/?id=${staff}`,{
                   type:'success'
                 });
 
-            fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+            fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
            .then(res=>{
             res.json()
           .then(data=>{

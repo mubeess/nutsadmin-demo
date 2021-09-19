@@ -50,7 +50,7 @@ export default function BarCharts() {
   const [myData,setMyData]=useState([])
   useEffect(()=>{
     let allData=[]
-    fetch('https://polar-brook-59807.herokuapp.com/admin/get-paid-student-statistics')
+    fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-paid-student-statistics')
     .then(res=>{
         res.json()
         .then(data=>{

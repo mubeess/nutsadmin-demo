@@ -68,7 +68,7 @@ useEffect(()=>{
        }else{
          setIsStudet(false)
        }
-       fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${appProps.editValue.user.section}`)
+       fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${appProps.editValue.user.section}`)
   .then(res=>{
     res.json()
     .then(data=>{
@@ -299,7 +299,7 @@ useEffect(()=>{
            }else{
              setIsStudet(false)
            }
-           fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+           fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
       .then(res=>{
         res.json()
         .then(data=>{
@@ -427,7 +427,7 @@ useEffect(()=>{
             country:'Nigeria'
           }
           console.log(selectedStudent)
-          fetch(`https://polar-brook-59807.herokuapp.com/admin/edit-student/?id=${appProps.editValue.user._id}`,{
+          fetch(`https://dry-hamlet-70721.herokuapp.com/admin/edit-student/?id=${appProps.editValue.user._id}`,{
             method:'PUT',
             headers:{
               "Content-Type":'application/json'

@@ -75,7 +75,7 @@ export default function StyledTable(props) {
                        
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -116,7 +116,7 @@ export default function StyledTable(props) {
                           username:props.row.username,
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -157,7 +157,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -197,7 +197,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -240,7 +240,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -280,7 +280,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -323,7 +323,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -366,7 +366,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -409,7 +409,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -453,7 +453,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -497,7 +497,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -539,7 +539,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -584,7 +584,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -624,7 +624,7 @@ export default function StyledTable(props) {
                         
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -668,7 +668,7 @@ export default function StyledTable(props) {
                            }
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -708,7 +708,7 @@ export default function StyledTable(props) {
                           username:props.row.username,
         
                         }
-                        fetch('https://polar-brook-59807.herokuapp.com/admin/add-student-cognitive',{
+                        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-student-cognitive',{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'

@@ -19,7 +19,7 @@ export default function Attendance() {
     const [total,setTotal]=useState(0)
   
         useEffect(()=>{
-            fetch('https://polar-brook-59807.herokuapp.com/admin/get-current-term').
+            fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-current-term').
             then(res=>{
               res.json()
               .then(data=>{

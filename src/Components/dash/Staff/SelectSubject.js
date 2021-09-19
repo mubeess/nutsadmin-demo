@@ -97,7 +97,7 @@ function SelectSubject(props) {
   const isAdmin=JSON.parse(localStorage.getItem('user')).role.includes('Admin')
   const isExamOfficer=JSON.parse(localStorage.getItem('user')).role.includes('examOfficer')
 
-  const urlToPush=isAdmin||isExamOfficer?'https://polar-brook-59807.herokuapp.com/admin/get-all-admin-curriculum':`https://polar-brook-59807.herokuapp.com/teacher/teacher-subjects/?id=${JSON.parse(localStorage.getItem('user')).user._id}`
+  const urlToPush=isAdmin||isExamOfficer?'https://dry-hamlet-70721.herokuapp.com/admin/get-all-admin-curriculum':`https://dry-hamlet-70721.herokuapp.com/teacher/teacher-subjects/?id=${JSON.parse(localStorage.getItem('user')).user._id}`
 
   useEffect(()=>{
     
@@ -223,7 +223,7 @@ function SelectSubject(props) {
       category:MyrealClass.includes('SSS')?classToConsider[0].category:classToConsider[0].category.toLowerCase()
     }
   
-     fetch('https://polar-brook-59807.herokuapp.com/teacher/fetch-students-result',{
+     fetch('https://dry-hamlet-70721.herokuapp.com/teacher/fetch-students-result',{
       method:'POST',
       headers:{
         "Content-Type":'application/json'

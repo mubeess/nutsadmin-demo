@@ -140,7 +140,7 @@ function Index(props) {
       // if (appProps.user.user.firstName==undefined) {
       //   props.history.push('/')
       // }
-        fetch('https://polar-brook-59807.herokuapp.com/admin/get-every-class')
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-every-class')
         .then(res=>{
           res.json()
           .then(data=>{
@@ -271,7 +271,7 @@ function Index(props) {
           console.log(myObj)
 
 
-          fetch('https://polar-brook-59807.herokuapp.com/admin/create-class',{
+          fetch('https://dry-hamlet-70721.herokuapp.com/admin/create-class',{
             method:'POST',
             headers:{
             "Content-Type":'application/json'
@@ -282,7 +282,7 @@ function Index(props) {
             .then(data=>{
             console.log(data)
 
-            fetch('https://polar-brook-59807.herokuapp.com/admin/get-every-class')
+            fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-every-class')
         .then(res=>{
           res.json()
           .then(data=>{
@@ -334,7 +334,7 @@ function Index(props) {
                    const myObj={
                      id:dat._id
                    }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/delete-class`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/delete-class`,{
                       method:'DELETE',
                       headers:{
                         "Content-Type":'application/json'
@@ -345,7 +345,7 @@ function Index(props) {
                        res.json()
                        .then(data=>{
                          console.log(data)
-                         fetch('https://polar-brook-59807.herokuapp.com/admin/get-every-class')
+                         fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-every-class')
                        .then(res=>{
                         res.json()
                        .then(data=>{

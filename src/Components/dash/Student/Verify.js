@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
       //   if (isMounted) setState(data);    // add conditional check
       // })
       const payments=[]
-      fetch(`https://polar-brook-59807.herokuapp.com/admin/get-payment-type`)
+      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-payment-type`)
           .then(res=>{
             res.json()
             .then(data=>{
@@ -149,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
 
     // useEffect(()=>{
     //   const payments=[]
-    //   fetch(`https://polar-brook-59807.herokuapp.com/admin/get-payment-type`)
+    //   fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-payment-type`)
     //       .then(res=>{
     //         res.json()
     //         .then(data=>{
@@ -219,7 +219,7 @@ const useStyles = makeStyles((theme) => ({
         <Selects
          onChange={(e)=>{
           setSection(e.target.value)
-          fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student-according-to-section/?section=${e.target.value}`)
+          fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student-according-to-section/?section=${e.target.value}`)
           .then(res=>{
             res.json()
             .then(data=>{
@@ -420,7 +420,7 @@ const useStyles = makeStyles((theme) => ({
            }
          }
          console.log(newPays)
-         fetch(`https://polar-brook-59807.herokuapp.com/admin/verify-payment/?username=${studentId}`,{
+         fetch(`https://dry-hamlet-70721.herokuapp.com/admin/verify-payment/?username=${studentId}`,{
           method:'POST',
           headers:{
             "Content-Type":'application/json'
@@ -526,7 +526,7 @@ const useStyles = makeStyles((theme) => ({
           paymentTypes:purpose,
           amount
         }
-        fetch('https://polar-brook-59807.herokuapp.com/admin/add-payment',{
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-payment',{
           method:'POST',
           headers:{
             "Content-Type":'application/json'
@@ -537,7 +537,7 @@ const useStyles = makeStyles((theme) => ({
           res.json()
           .then(data=>{
             console.log(data)
-            fetch('https://polar-brook-59807.herokuapp.com/admin/get-payment-type')
+            fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-payment-type')
             .then(res=>{
               res.json()
               .then(data=>{

@@ -66,7 +66,7 @@ export default function Proceed() {
         setChecked(event.target.checked);
       };
       useEffect(()=>{
-       fetch('https://polar-brook-59807.herokuapp.com/admin/get-current-term').
+       fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-current-term').
        then(res=>{
          res.json()
          .then(data=>{
@@ -136,7 +136,7 @@ export default function Proceed() {
        
        
        if (checked) {
-        fetch('https://polar-brook-59807.herokuapp.com/admin/set-new-term',{
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/set-new-term',{
           method:'POST',
           headers:{
           "Content-Type":'application/json'
@@ -208,7 +208,7 @@ entered successfuly
         }
       }
 
-        fetch('https://polar-brook-59807.herokuapp.com/admin/set-new-session',{
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/set-new-session',{
           method:'POST',
           headers:{
           "Content-Type":'application/json'

@@ -70,7 +70,7 @@ export default function StyledTable(props) {
                         value:e.target.checked,
                         username:props.teach.username
                       }
-                      fetch(`https://polar-brook-59807.herokuapp.com/admin/allow-submission-priviledge`,{
+                      fetch(`https://dry-hamlet-70721.herokuapp.com/admin/allow-submission-priviledge`,{
                         method:'PUT',
                         headers:{
                           "Content-Type":'application/json'
@@ -108,7 +108,7 @@ export default function StyledTable(props) {
                        value:e.target.checked,
                        username:props.teach.username
                      }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/allow-submission-priviledge`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/allow-submission-priviledge`,{
                        method:'PUT',
                        headers:{
                          "Content-Type":'application/json'
@@ -143,7 +143,7 @@ export default function StyledTable(props) {
                        value:e.target.checked,
                        username:props.teach.username
                      }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/allow-submission-priviledge`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/allow-submission-priviledge`,{
                        method:'PUT',
                        headers:{
                          "Content-Type":'application/json'
@@ -181,7 +181,7 @@ export default function StyledTable(props) {
                        value:e.target.checked,
                        username:props.teach.username
                      }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/allow-submission-priviledge`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/allow-submission-priviledge`,{
                        method:'PUT',
                        headers:{
                          "Content-Type":'application/json'
@@ -218,7 +218,7 @@ export default function StyledTable(props) {
                        value:e.target.checked,
                        username:props.teach.username
                      }
-                     fetch(`https://polar-brook-59807.herokuapp.com/admin/allow-submission-priviledge`,{
+                     fetch(`https://dry-hamlet-70721.herokuapp.com/admin/allow-submission-priviledge`,{
                        method:'PUT',
                        headers:{
                          "Content-Type":'application/json'

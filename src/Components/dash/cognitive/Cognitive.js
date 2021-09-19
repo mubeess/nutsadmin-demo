@@ -204,7 +204,7 @@ const StyledTableCell = withStyles((theme) => ({
   useEffect(()=>{
 
 
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
     .then(res=>{
       res.json()
       .then(data=>{
@@ -236,7 +236,7 @@ const StyledTableCell = withStyles((theme) => ({
                onChange={(e)=>{
                 setSection(e.target.value)
                
-                fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+                fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
                 .then(res=>{
                   res.json()
                   .then(data=>{
@@ -321,13 +321,13 @@ const StyledTableCell = withStyles((theme) => ({
           
           <div className='personal'>
           <Button onClick={()=>{
-            fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-student-according-to-class-category/?currentClass=${classs}&&category=${category}`)
+            fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-student-according-to-class-category/?currentClass=${classs}&&category=${category}`)
                 .then(res=>{
                   res.json()
                   .then(data=>{
                     setAllStudents(data.students)
                    console.log(data)
-                   fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-cognitive-item/`)
+                   fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-cognitive-item/`)
                    .then(res=>{
                      res.json()
                      .then(data=>{

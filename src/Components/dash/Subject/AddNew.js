@@ -65,7 +65,7 @@ export default function AddNew() {
 const myObj={
     subject
 }
-fetch('https://polar-brook-59807.herokuapp.com/admin/create-subject',{
+fetch('https://dry-hamlet-70721.herokuapp.com/admin/create-subject',{
 method:'POST',
 headers:{
 "Content-Type":'application/json'

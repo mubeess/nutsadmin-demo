@@ -159,7 +159,7 @@ flex-direction: column;
 
     React.useEffect(()=>{
       let newSub=[]
-     fetch('https://polar-brook-59807.herokuapp.com/admin/get-all-subject')
+     fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-all-subject')
      .then(res=>{
        res.json()
        .then(data=>{
@@ -234,7 +234,7 @@ flex-direction: column;
          onChange={(e)=>{
          console.log(e.target.value)
          setSection(e.target.value)
-         fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+         fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
          .then(res=>{
            res.json()
            .then(data=>{
@@ -343,7 +343,7 @@ flex-direction: column;
           name:selectedClass,
           subject:selectedOptions
         }
-        fetch('https://polar-brook-59807.herokuapp.com/admin/add-curriculum',{
+        fetch('https://dry-hamlet-70721.herokuapp.com/admin/add-curriculum',{
           method:'POST',
           headers:{
             "Content-Type":'application/json'

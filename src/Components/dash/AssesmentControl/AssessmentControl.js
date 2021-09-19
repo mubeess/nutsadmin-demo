@@ -39,7 +39,7 @@ export default function AssessmentControl() {
     const [allTeachers,setAllTeachers]=useState([])
 
     useEffect(() => {
-        fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-teachers`)
+        fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-teachers`)
                              .then(res=>{
                                res.json()
                                .then(dat=>{

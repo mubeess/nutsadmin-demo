@@ -78,7 +78,7 @@ const useStyles = makeStyles({
   const filtered= ultraFiltered.length==0?ultraFiltered:ultraFiltered.filter(dat=>dat.username.toLowerCase().includes(searchVal.toLowerCase())||dat.className.toLowerCase().includes(searchVal.toLowerCase()))
 
   useEffect(()=>{
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-paid-and-un-paid-student`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-paid-and-un-paid-student`)
     .then(res=>{
       res.json()
       .then(data=>{

@@ -76,7 +76,7 @@ const useStyles = makeStyles({
   const filtered= allStaff.length==0?allStaff:allStaff.filter(dat=>dat.firstName.toLowerCase().includes(searchVal.toLowerCase())||dat.lastName.toLowerCase().includes(searchVal.toLowerCase())||dat.username.toLowerCase().includes(searchVal.toLowerCase())||dat.role[0].toLowerCase().includes(searchVal.toLowerCase()))
 
   useEffect(()=>{
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
     .then(res=>{
       res.json()
       .then(data=>{
@@ -155,7 +155,7 @@ const useStyles = makeStyles({
                  appProps.user.role.includes('Admin')&&(
                   <DeleteForeverRounded onClick={()=>{
                     const userId=row._id;
-                    fetch(`https://polar-brook-59807.herokuapp.com/admin/remove-staff/?id=${userId}`,{
+                    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/remove-staff/?id=${userId}`,{
                      method:'DELETE',
                      headers:{
                        "Content-Type":'application/json'
@@ -164,7 +164,7 @@ const useStyles = makeStyles({
                     .then(res=>{
                       res.json()
                       .then(data=>{
-                        fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+                        fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
                        .then(res=>{
                          res.json()
                          .then(data=>{
@@ -211,7 +211,7 @@ const useStyles = makeStyles({
                  appProps.user.role.includes('Admin')&&(
                   <DeleteForeverRounded onClick={()=>{
                     const userId=row._id;
-                    fetch(`https://polar-brook-59807.herokuapp.com/admin/remove-staff/?id=${userId}`,{
+                    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/remove-staff/?id=${userId}`,{
                      method:'DELETE',
                      headers:{
                        "Content-Type":'application/json'
@@ -220,7 +220,7 @@ const useStyles = makeStyles({
                     .then(res=>{
                       res.json()
                       .then(data=>{
-                        fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+                        fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
                        .then(res=>{
                          res.json()
                          .then(data=>{

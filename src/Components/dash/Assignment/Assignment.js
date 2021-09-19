@@ -123,23 +123,7 @@ margin-top: 10px;
 
 
 
-const propsss = {
-    name: 'file',
-    action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
-    headers: {
-      authorization: 'authorization-text',
-    },
-    onChange(info) {
-      if (info.file.status !== 'uploading') {
-        console.log(info.file, info.fileList);
-      }
-      if (info.file.status === 'done') {
-        message.success(`${info.file.name} file uploaded successfully`);
-      } else if (info.file.status === 'error') {
-        message.error(`${info.file.name} file upload failed.`);
-      }
-    },
-  };
+
 
 
 
@@ -190,7 +174,7 @@ const propsss = {
 
     React.useEffect(()=>{
       let newSub=[]
-     fetch('https://polar-brook-59807.herokuapp.com/admin/get-all-subject')
+     fetch('https://dry-hamlet-70721.herokuapp.com/admin/get-all-subject')
      .then(res=>{
        res.json()
        .then(data=>{
@@ -266,7 +250,7 @@ const propsss = {
          onChange={(e)=>{
          console.log(e.target.value)
          setSection(e.target.value)
-         fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+         fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
          .then(res=>{
            res.json()
            .then(data=>{
@@ -394,7 +378,7 @@ const propsss = {
              </div>
 <div className='selection'> 
     <Upload 
-    action='https://polar-brook-59807.herokuapp.com/teacher/create-assignment-file'
+    action='https://dry-hamlet-70721.herokuapp.com/teacher/create-assignment-file'
     name='file'
     method='POST'
    
@@ -452,7 +436,7 @@ const myObj={
         //   msgBody
         // }
         console.log(myObj)
-        fetch('https://polar-brook-59807.herokuapp.com/teacher/create-assignment-text',{
+        fetch('https://dry-hamlet-70721.herokuapp.com/teacher/create-assignment-text',{
           method:'PUT',
           headers:{
             "Content-Type":'application/json'

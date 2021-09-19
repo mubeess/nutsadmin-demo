@@ -217,7 +217,7 @@ const StyledTableRow = withStyles((theme) => ({
   useEffect(()=>{
 
 
-    fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-staff`)
+    fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-staff`)
     .then(res=>{
       res.json()
       .then(data=>{
@@ -319,7 +319,7 @@ const StyledTableRow = withStyles((theme) => ({
                onChange={(e)=>{
                 setSection(e.target.value)
                
-                fetch(`https://polar-brook-59807.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
+                fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-all-classes/?section=${e.target.value}`)
                 .then(res=>{
                   res.json()
                   .then(data=>{
@@ -407,7 +407,7 @@ const StyledTableRow = withStyles((theme) => ({
           <div className='personal'>
           <Button onClick={()=>{
             handleToggle()
-            fetch(`https://polar-brook-59807.herokuapp.com/admin/get-a-class-result/?className=${classs}&&category=${category}&&term=${term}&&session=${session}`)
+            fetch(`https://dry-hamlet-70721.herokuapp.com/admin/get-a-class-result/?className=${classs}&&category=${category}&&term=${term}&&session=${session}`)
                 .then(res=>{
                   res.json()
                   .then(data=>{
